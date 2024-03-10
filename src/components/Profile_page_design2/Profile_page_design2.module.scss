@@ -25,11 +25,13 @@
       width: 400px;
       height: 400px;
       border-radius: 6px;
-      background-image:/* webpackIgnore: true */ url('/assets/image.jpeg');
+      background-image:/* webpackIgnore: true */ url("/assets/image.jpeg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      box-shadow: 0px 8px 17px 0px #171a1f26, 0px 0px 2px 0px #171a1f1f;
+      box-shadow:
+        0px 8px 17px 0px #171a1f26,
+        0px 0px 2px 0px #171a1f1f;
     }
     &__profile_information {
       width: min-content;
@@ -41,8 +43,17 @@
         color: #171a1f;
         font-size: 32px;
         line-height: 48px;
-        font-family: Epilogue, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-          'Liberation Sans', sans-serif;
+        font-family:
+          Epilogue,
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          "Liberation Sans",
+          sans-serif;
         width: min-content;
         height: min-content;
         white-space: nowrap;
@@ -53,8 +64,17 @@
         color: #171a1f;
         font-size: 24px;
         line-height: 36px;
-        font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-          'Liberation Sans', sans-serif;
+        font-family:
+          Inter,
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          "Liberation Sans",
+          sans-serif;
         width: min-content;
         height: min-content;
         white-space: nowrap;
@@ -65,8 +85,17 @@
         color: #171a1f;
         font-size: 16px;
         line-height: 19px;
-        font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-          'Liberation Sans', sans-serif;
+        font-family:
+          Inter,
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          "Liberation Sans",
+          sans-serif;
         width: 462px;
         height: 120px;
         flex-direction: column;
@@ -103,8 +132,17 @@
             color: #bcc1ca;
             font-size: 16px;
             line-height: 26px;
-            font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-              'Liberation Sans', sans-serif;
+            font-family:
+              Inter,
+              system-ui,
+              -apple-system,
+              "Segoe UI",
+              Roboto,
+              "Helvetica Neue",
+              Arial,
+              "Noto Sans",
+              "Liberation Sans",
+              sans-serif;
             position: absolute;
             left: calc(50% - 11.5px);
             top: 50%;
@@ -138,8 +176,17 @@
             color: #bcc1ca;
             font-size: 16px;
             line-height: 26px;
-            font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-              'Liberation Sans', sans-serif;
+            font-family:
+              Inter,
+              system-ui,
+              -apple-system,
+              "Segoe UI",
+              Roboto,
+              "Helvetica Neue",
+              Arial,
+              "Noto Sans",
+              "Liberation Sans",
+              sans-serif;
             position: absolute;
             left: 44px;
             right: 94px;
@@ -173,8 +220,17 @@
             color: #bcc1ca;
             font-size: 16px;
             line-height: 26px;
-            font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-              'Liberation Sans', sans-serif;
+            font-family:
+              Inter,
+              system-ui,
+              -apple-system,
+              "Segoe UI",
+              Roboto,
+              "Helvetica Neue",
+              Arial,
+              "Noto Sans",
+              "Liberation Sans",
+              sans-serif;
             position: absolute;
             left: calc(50% - 11.5px);
             top: 50%;
@@ -182,6 +238,168 @@
             height: min-content;
             flex-direction: column;
             transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  /* iPad View */
+  .profile_container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; /* Removed padding to allow the container to fill the screen */
+
+    &__profile_details_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+
+      &__image {
+        width: 300px;
+        height: 300px;
+      }
+
+      &__profile_information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__name {
+          font-size: 24px;
+          line-height: 36px;
+        }
+
+        &__role {
+          font-size: 18px;
+          line-height: 27px;
+        }
+
+        &__description {
+          font-size: 12px;
+          line-height: 14px;
+          width: 346.5px;
+          height: 90px;
+          text-align: center;
+        }
+
+        &__more_details {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 468.75px;
+          gap: 27px 18.75px;
+
+          &__textboxEmail,
+          &__textboxLocation,
+          &__textboxMobile {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 225px;
+            height: 37.5px;
+
+            &__mail,
+            &__pin3,
+            &__phone {
+              width: 15px;
+              height: 15px;
+            }
+
+            &__johndoeGmailCom,
+            &___766HoustonStreet,
+            &__johndoeGmailCom2 {
+              font-size: 12px;
+              line-height: 19.5px;
+              width: 125.25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .profile_container1 {
+    padding: 46px 29px;
+    &__profile_details_container {
+      flex-direction: column; /* Changed from row to column */
+      gap: 24px;
+      align-items: center; /* Keeps items centered */
+
+      &__image_name_role {
+        display: flex; /* New container for image, name, and role */
+        flex-direction: row; /* Aligns image, name, and role in a row */
+        gap: 12px; /* Space between image, name, and role */
+        align-items: center; /* Aligns items vertically in the center */
+
+        &__image {
+          width: 120px;
+          height: 120px;
+          border-radius: 60px;
+          margin: 0 auto;
+        }
+
+        &__name {
+          font-size: 16px;
+          line-height: 24px;
+          width: 140px;
+          height: 26px;
+        }
+
+        &__role {
+          font-size: 12px;
+          line-height: 18px;
+          width: 163px;
+          height: 19px;
+        }
+      }
+
+      &__profile_information {
+        gap: 12px;
+        padding: 0 12px;
+        display: flex;
+        flex-direction: column; /* Kept as column to stack description and textboxfield vertically */
+
+        &__description {
+          font-size: 8px;
+          line-height: 10px;
+          width: 243px;
+          height: 60px;
+        }
+
+        &__more_details {
+          flex-direction: column;
+          width: 244px;
+          gap: 12px;
+
+          &__textboxEmail,
+          &__textboxMobile,
+          &__textboxLocation {
+            width: 244px;
+            height: 31px;
+            padding: 10px 8px;
+            margin: 12px auto 0 auto;
+
+            &__email_Icon,
+            &__phone_Number,
+            &__location_Icon {
+              width: 10px;
+              height: 10px;
+            }
+
+            &__email,
+            &___9999999999,
+            &__address {
+              font-size: 8px;
+              line-height: 13px;
+              text-align: center;
+            }
           }
         }
       }
